@@ -1,4 +1,4 @@
-# [Jinja2 GradientAble](https://jinja2-gradientable.appseed.us/)
+# [Jinja2 Template - GradientAble](https://jinja2-gradientable.appseed.us/)
 
 > Template Theme provided by [AppSeed](https://appseed.us) - Features:
 
@@ -186,4 +186,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Jinja2 GradientAble](https://jinja2-gradientable.appseed.us/) - Provided by [AppSeed](https://appseed.us).
+[Jinja2 Template - GradientAble](https://jinja2-gradientable.appseed.us/) - Provided by [AppSeed](https://appseed.us).
