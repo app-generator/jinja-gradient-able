@@ -12,6 +12,11 @@
 
 - [Jinja2 GradientAble](https://jinja2-gradientable.appseed.us/) - LIVE Demo
 
+> Used by
+
+- [Flask Dashboard - GradientAble](https://appseed.us/admin-dashboards/flask-dashboard-gradientable)
+- [Django Dashboard - GradientAble](https://appseed.us/admin-dashboards/django-dashboard-gradientable)
+
 <br />
 
 ## UI Kit - [Gradient Able](https://codedthemes.com/item/gradient-able-bootstrap-lite/?ref=appseed)
