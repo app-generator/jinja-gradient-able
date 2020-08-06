@@ -1,4 +1,4 @@
-# [Jinja2 Template - GradientAble](https://jinja2-gradientable.appseed.us/)
+# [Jinja Template - GradientAble](https://jinja2-gradientable.appseed.us/)
 
 > Template Theme provided by [AppSeed](https://appseed.us) - Features:
 
@@ -25,7 +25,7 @@
 
 <br />
 
-![Jinja2 GradientAble - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/jinja2-gradientable/master/media/jinja2-gradientable-screen.png)
+![Jinja Template - GradientAble.](https://raw.githubusercontent.com/app-generator/jinja2-gradientable/master/media/jinja2-gradientable-screen.png)
 
 <br />
 
@@ -186,4 +186,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Jinja2 Template - GradientAble](https://jinja2-gradientable.appseed.us/) - Provided by [AppSeed](https://appseed.us).
+[Jinja Template - GradientAble](https://jinja2-gradientable.appseed.us/) - Provided by [AppSeed](https://appseed.us).
