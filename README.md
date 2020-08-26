@@ -1,8 +1,8 @@
-# [Jinja Template - GradientAble](https://jinja2-gradientable.appseed.us/)
+# [Jinja Template](https://github.com/app-generator/jinja-template) - GradientAble
 
 > Template Theme provided by [AppSeed](https://appseed.us) - Features:
 
-- UI Kit: **Gradient Able** (Free Version) by **CodedThemes**
+- UI Kit: **Gradient Able** (Free Version) by **[CodedThemes](https://appseed.us/agency/codedthemes)**
 - Render Engine: Flask / [Jinja2](https://jinja.palletsprojects.com/)
 - **[MIT License](https://github.com/app-generator/license-mit)**
 - Free support via **Github** issues tracker
@@ -15,14 +15,9 @@
 
 <br />
 
-## UI Kit - [Gradient Able](https://codedthemes.com/item/gradient-able-bootstrap-lite/?ref=appseed)
+## UI Kit - Gradient Able
 
 *Vendor Notes* -Gradient Able Bootstrap 4 Free/Lite Admin Template is a complete solution for your dashboard creation. The default layout version comes with limited options like Google optimized, font integration, high speed, mature & sophisticated, and extremely well-organized code which makes free Gradient Able a fully flexible solution for any backend application project.
-
-> Links
-
-- [Gradient Able UI](https://codedthemes.com/item/gradient-able-bootstrap-lite/?ref=appseed) - product page
-- [Gradient Able Demo](http://lite.codedthemes.com/gradient-able/bootstrap/?ref=appseed)
 
 <br />
 
@@ -187,4 +182,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Jinja Template - GradientAble](https://jinja2-gradientable.appseed.us/) - Provided by [AppSeed](https://appseed.us).
+[Jinja Template](https://github.com/app-generator/jinja-template) GradientAble - Provided by [AppSeed](https://appseed.us).
