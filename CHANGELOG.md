@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1] 2021-01-11
+### Improvements
+
+- Rename project to standard
+- Codebase: inject `segment` in views
+- [Gradient Able](https://github.com/codedthemes/Gradient-Able-free-bootstrap-admin-template): latest revision
+
 ## [1.0.0] 2020-07-28
 ### Initial Release
 
