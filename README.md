@@ -184,7 +184,7 @@ The project has a simple, intuitive structure presented bellow:
 Designed for those who like bold elements and beautiful websites, **Gradient Able** is the most stylish Bootstrap 5 Admin Template compare to all other Bootstrap admin templates. It comes with high feature-rich pages and components with fully developer-centric code. 
 
 - 👉 [Flask Gradient PRO](https://appseed.us/product/gradient-able-pro/flask/) - product page
-- 👉 [Flask Gradient PRO](https://flask-gradient-able-pro.appseed-srv1.com) - LIVE Deployment
+- 👉 [Flask Gradient PRO](https://flask-gradient-pro.appseed-srv1.com/) - LIVE Deployment
 
 <br >
 
