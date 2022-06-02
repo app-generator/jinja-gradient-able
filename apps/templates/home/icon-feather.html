@@ -1,379 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Gradient Able bootstrap admin template by codedthemes</title>
-    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 11]>
-    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    	<![endif]-->
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="">
-    <meta name="author" content="Codedthemes" />
-    <!-- Favicon icon -->
-    <link rel="icon" href="/static/assets/images/favicon.ico" type="image/x-icon">
+{% extends "layouts/base.html" %}
 
-    <!-- vendor css -->
-    <link rel="stylesheet" href="/static/assets/css/style.css">
-    
-    
+{% block title %} Apex Charts {% endblock %} 
 
-</head>
-<body class="">
-	<!-- [ Pre-loader ] start -->
-	<div class="loader-bg">
-		<div class="loader-track">
-			<div class="loader-fill"></div>
-		</div>
-	</div>
-	<!-- [ Pre-loader ] End -->
-	<!-- [ navigation menu ] start -->
-	<nav class="pcoded-navbar menupos-fixed menu-light ">
-		<div
-			class="navbar-wrapper  ">
-			<div class="navbar-content scroll-div "
-				>
-				<ul class="nav pcoded-inner-navbar ">
-					<li class="nav-item pcoded-menu-caption">
-						<label>Navigation</label>
-					</li>
-					<li class="nav-item">
-						<a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span
-								class="pcoded-mtext">Dashboard</span></a>
-					</li>
-					<li class="nav-item pcoded-menu-caption">
-						<label>UI Element</label>
-					</li>
-					<li class="nav-item">
-						<a href="/bc_typography.html" class="nav-link "><span class="pcoded-micon"><i
-									class="feather icon-box"></i></span><span class="pcoded-mtext">Typography</span></a>
-					</li>
-					<li class="nav-item">
-						<a href="/icon-feather.html" class="nav-link "><span class="pcoded-micon"><i
-									class="feather icon-feather"></i></span><span class="pcoded-mtext">Icons</span></a>
-					</li>
-					<li class="nav-item pcoded-menu-caption">
-						<label>table</label>
-					</li>
-					<li class="nav-item">
-						<a href="/tbl_bootstrap.html" class="nav-link "><span class="pcoded-micon"><i
-									class="feather icon-align-justify"></i></span><span class="pcoded-mtext">Bootstrap table</span></a>
-					</li>
-					<li class="nav-item pcoded-menu-caption">
-						<label>Chart & Maps</label>
-					</li>
-					<li class="nav-item">
-						<a href="/chart-apex.html" class="nav-link "><span class="pcoded-micon"><i
-									class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a>
-					</li>
-					<li class="nav-item">
-						<a href="/map-google.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-map"></i></span><span
-								class="pcoded-mtext">Maps</span></a>
-					</li>
-					<li class="nav-item pcoded-menu-caption">
-						<label>Pages</label>
-					</li>
-					<li class="nav-item pcoded-hasmenu">
-						<a href="#" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span
-								class="pcoded-mtext">Authentication</span></a>
-						<ul class="pcoded-submenu">
-							<li><a href="/auth-signup.html" target="_blank">Sign up</a></li>
-							<li><a href="/auth-signin.html" target="_blank">Sign in</a></li>
-						</ul>
-					</li>
-					<li class="nav-item pcoded-menu-caption">
-						<label>Other</label>
-					</li>
-					<li class="nav-item pcoded-hasmenu">
-						<a href="#" class="nav-link "><span class="pcoded-micon"><i class="feather icon-menu"></i></span><span
-								class="pcoded-mtext">Menu levels</span></a>
-						<ul class="pcoded-submenu">
-							<li><a href="#">Menu Level 2.1</a></li>
-							<li class="pcoded-hasmenu">
-								<a href="#">Menu level 2.2</a>
-								<ul class="pcoded-submenu">
-									<li><a href="#">Menu level 3.1</a></li>
-									<li><a href="#">Menu level 3.2</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item"><a href="/sample-page.html" class="nav-link "><span class="pcoded-micon"><i
-									class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
-				</ul>
-				
-				<div class="card text-center">
-					<div class="card-body px-3">
-						<i class="feather icon-sunset f-40"></i>
-						<h6 class="mt-3">Upgrade to Pro</h6>
-						<p>To get more features and components</p>
-						<a href="https://appseed.us/product/gradient-able-pro/flask/" target="_blank"
-							class="btn btn-primary btn-sm text-white m-0">Buy now</a>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
-	<!-- [ navigation menu ] end -->
-	<!-- [ Header ] start -->
-	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed header-blue">
-		
-			
-				<div class="m-header">
-					<a class="mobile-menu" id="mobile-collapse" href="#"><span></span></a>
-					<a href="#" class="b-brand">
-						<!-- ========   change your logo hear   ============ -->
-						<img src="/static/assets/images/logo.png" alt="" class="logo">
-						<img src="/static/assets/images/logo-icon.png" alt="" class="logo-thumb">
-					</a>
-					<a href="#" class="mob-toggler">
-						<i class="feather icon-more-vertical"></i>
-					</a>
-				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav me-auto">
-						<li class="nav-item">
-							<a href="#" class="pop-search"><i class="feather icon-search"></i></a>
-							<div class="search-bar">
-								<input type="text" class="form-control border-0 shadow-none" placeholder="Search here">
-								<button type="button" class="btn-close" aria-label="Close">
-								</button>
-							</div>
-						</li>
-					</ul>
-					<ul class="navbar-nav ms-auto">
-						<li>
-							<div class="dropdown drp-user">
-								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-									<img src="/static/assets/images/user/avatar-1.jpg" class="img-radius wid-40"
-										alt="User-Profile-Image">
-								</a>
-								<div class="dropdown-menu dropdown-menu-end profile-notification">
-									<div class="pro-head">
-										<img src="/static/assets/images/user/avatar-1.jpg" class="img-radius"
-											alt="User-Profile-Image">
-										<span>John Doe</span>
-									</div>
-									<ul class="pro-body">
-										<li class="bg-transparent mb-2 ms-3"><a target="_blank"
-												href="https://appseed.us/product/gradient-able-pro/flask/"><span
-													class="badge bg-primary">Upgrade to Pro</span></a></li>
-										<li><a href="/auth-signin.html" class="dropdown-item"><i
-													class="feather icon-lock"></i> Logout</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				
-			
-	</header>
-	<!-- [ Header ] end -->
-<!-- [ Main Content ] start -->
-<div class="pcoded-main-container">
-    <div class="pcoded-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-            <div class="page-block">
-                <div class="row align-items-center">
-                    <div class="col-md-12">
-                        <div class="page-header-title">
-                            <h5 class="m-b-10">Feather</h5>
-                        </div>
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="#">Icons</a></li>
-                            <li class="breadcrumb-item"><a href="#">Feather icon</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [ breadcrumb ] end -->
-        <!-- [ Main Content ] start -->
-        <div class="row">
-            <!-- [ feather-icon ] start -->
-            <div class="col-sm-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Feather Icon</h5>
-                    </div>
-                    <div class="card-body text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-sm-6">
-                                <input type="text" id="icon-search" class="form-control mb-4" placeholder="search . . ">
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+                <div class="page-block">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="page-header-title">
+                                <h5 class="m-b-10">Feather</h5>
                             </div>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/"><i class="feather icon-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#">Icons</a></li>
+                                <li class="breadcrumb-item"><a href="#">Feather icon</a></li>
+                            </ul>
                         </div>
-                        <div class="i-main" id="icon-wrapper"></div>
                     </div>
                 </div>
             </div>
-            <!-- [ feather-icon ] end -->
-        </div>
-        <!-- [ Main Content ] end -->
-    </div>
-</div>
-<!-- [ Main Content ] end -->
-    <!-- Warning Section start -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 11]>
-        <div class="ie-warning">
-            <h1>Warning!!</h1>
-            <p>You are using an outdated version of Internet Explorer, please upgrade
-               <br/>to any of the following web browsers to access this website.
-            </p>
-            <div class="iew-container">
-                <ul class="iew-download">
-                    <li>
-                        <a href="http://www.google.com/chrome/">
-                            <img src="/static/assets/images/browser/chrome.png" alt="Chrome">
-                            <div>Chrome</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.mozilla.org/en-US/firefox/new/">
-                            <img src="/static/assets/images/browser/firefox.png" alt="Firefox">
-                            <div>Firefox</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.opera.com">
-                            <img src="/static/assets/images/browser/opera.png" alt="Opera">
-                            <div>Opera</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.apple.com/safari/">
-                            <img src="/static/assets/images/browser/safari.png" alt="Safari">
-                            <div>Safari</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                            <img src="/static/assets/images/browser/ie.png" alt="">
-                            <div>IE (11 & above)</div>
-                        </a>
-                    </li>
-                </ul>
+            <!-- [ breadcrumb ] end -->
+            <!-- [ Main Content ] start -->
+            <div class="row">
+                <!-- [ feather-icon ] start -->
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Feather Icon</h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6">
+                                    <input type="text" id="icon-search" class="form-control mb-4" placeholder="search . . ">
+                                </div>
+                            </div>
+                            <div class="i-main" id="icon-wrapper"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ feather-icon ] end -->
             </div>
-            <p>Sorry for the inconvenience!</p>
+            <!-- [ Main Content ] end -->
         </div>
-    <![endif]-->
-    <!-- Warning Section Ends -->
+    </div>
+    <!-- [ Main Content ] end -->
 
-    <!-- Required Js -->
-    <script src="/static/assets/js/plugins/popper.min.js"></script>
-    <script src="/static/assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="/static/assets/js/plugins/bootstrap.min.js"></script>
-    <script src="/static/assets/js/pcoded.js"></script>
+{% endblock content %}
 
-<script src="/static/assets/js/plugins/clipboard.min.js"></script>
-<script type="text/javascript">
-    var iconlist = ['alert-octagon', 'alert-circle', 'activity', 'alert-triangle', 'align-center', 'airplay',
-        'align-justify', 'align-left', 'align-right', 'arrow-down-left',
-        'arrow-down-right', 'anchor', 'aperture', 'arrow-left', 'arrow-right', 'arrow-down', 'arrow-up-left',
-        'arrow-up-right', 'arrow-up', 'award', 'bar-chart', 'at-sign',
-        'bar-chart-2', 'battery-charging', 'bell-off', 'battery', 'bluetooth', 'bell', 'book', 'briefcase',
-        'camera-off', 'calendar', 'bookmark', 'box', 'camera',
-        'check-circle', 'check', 'check-square', 'cast', 'chevron-down', 'chevron-left', 'chevron-right',
-        'chevron-up', 'chevrons-down', 'chevrons-right', 'chevrons-up',
-        'chevrons-left', 'circle', 'clipboard', 'chrome', 'clock', 'cloud-lightning', 'cloud-drizzle', 'cloud-rain',
-        'cloud-off', 'codepen', 'cloud-snow', 'compass', 'copy',
-        'corner-down-right', 'corner-down-left', 'corner-left-down', 'corner-left-up', 'corner-up-left',
-        'corner-up-right', 'corner-right-down', 'corner-right-up', 'cpu', 'credit-card',
-        'crosshair', 'disc', 'delete', 'download-cloud', 'download', 'droplet', 'edit-2', 'edit', 'external-link',
-        'eye', 'feather', 'facebook', 'file-minus',
-        'eye-off', 'fast-forward', 'file-text', 'film', 'file', 'file-plus', 'folder', 'filter', 'flag', 'globe',
-        'grid', 'heart', 'home', 'github', 'image',
-        'inbox', 'layers', 'info', 'instagram', 'layout', 'link-2', 'life-buoy', 'link', 'log-in', 'list', 'lock',
-        'log-out', 'loader', 'mail', 'maximize-2',
-        'map', 'map-pin', 'menu', 'message-circle', 'message-square', 'minimize-2', 'mic-off', 'minus-circle',
-        'mic', 'minus-square', 'minus', 'moon', 'monitor',
-        'more-vertical', 'more-horizontal', 'move', 'music', 'navigation-2', 'navigation', 'octagon', 'package',
-        'pause-circle', 'pause', 'percent', 'phone-call',
-        'phone-forwarded', 'phone-missed', 'phone-off', 'phone-incoming', 'phone', 'phone-outgoing', 'pie-chart',
-        'play-circle', 'play', 'plus-square', 'plus-circle', 'plus',
-        'pocket', 'printer', 'power', 'radio', 'repeat', 'refresh-ccw', 'rewind', 'rotate-ccw', 'refresh-cw',
-        'rotate-cw', 'save', 'search', 'server', 'scissors',
-        'share-2', 'share', 'shield', 'settings', 'skip-back', 'shuffle', 'sidebar', 'skip-forward', 'slack',
-        'slash', 'smartphone', 'square', 'speaker', 'star',
-        'stop-circle', 'sun', 'sunrise', 'tablet', 'tag', 'sunset', 'target', 'thermometer', 'thumbs-up',
-        'thumbs-down', 'toggle-left', 'toggle-right', 'trash-2', 'trash',
-        'trending-up', 'trending-down', 'triangle', 'type', 'twitter', 'upload', 'umbrella', 'upload-cloud',
-        'unlock', 'user-check', 'user-minus', 'user-plus', 'user-x',
-        'user', 'users', 'video-off', 'video', 'voicemail', 'volume-x', 'volume-2', 'volume-1', 'volume', 'watch',
-        'wifi', 'x-square', 'wind', 'x', 'x-circle',
-        'zap', 'zoom-in', 'zoom-out', 'command', 'cloud', 'hash', 'headphones', 'underline', 'italic', 'bold',
-        'crop', 'help-circle', 'paperclip', 'shopping-cart',
-        'tv', 'wifi-off', 'minimize', 'maximize', 'gitlab', 'sliders'
-    ];
-    for (var i = 0, l = iconlist.length; i < l; i++) {
-        let iconblock = document.createElement('div');
-        iconblock.setAttribute('class', 'i-block');
-        iconblock.setAttribute('data-clipboard-text', iconlist[i]);
-        iconblock.setAttribute('data-bs-toggle', 'tooltip');
-        iconblock.setAttribute('data-filter', iconlist[i]);
-        iconblock.setAttribute('title', iconlist[i]);
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
 
-        let iconmain = document.createElement('i');
-        iconmain.setAttribute('class', 'feather icon-'+ iconlist[i]);
-        iconblock.appendChild(iconmain);
-        document.querySelector('#icon-wrapper').append(iconblock);
-    }
-    window.addEventListener('load', (event) => {
-        var iclp = new ClipboardJS('.i-block');
-        iclp.on('success', function (e) {
-            var targetElement = e.trigger;
-            let iconbadge = document.createElement('span');
-            iconbadge.setAttribute('class', 'ic-badge badge bg-success');
-            iconbadge.innerHTML = "copied";
-            targetElement.append(iconbadge);
-            setTimeout(function () {
-                targetElement.children[1].remove();
-            }, 3000);
-        });
+    <script src="/static/assets/js/plugins/clipboard.min.js"></script>
+    <script type="text/javascript">
+        var iconlist = ['alert-octagon', 'alert-circle', 'activity', 'alert-triangle', 'align-center', 'airplay',
+            'align-justify', 'align-left', 'align-right', 'arrow-down-left',
+            'arrow-down-right', 'anchor', 'aperture', 'arrow-left', 'arrow-right', 'arrow-down', 'arrow-up-left',
+            'arrow-up-right', 'arrow-up', 'award', 'bar-chart', 'at-sign',
+            'bar-chart-2', 'battery-charging', 'bell-off', 'battery', 'bluetooth', 'bell', 'book', 'briefcase',
+            'camera-off', 'calendar', 'bookmark', 'box', 'camera',
+            'check-circle', 'check', 'check-square', 'cast', 'chevron-down', 'chevron-left', 'chevron-right',
+            'chevron-up', 'chevrons-down', 'chevrons-right', 'chevrons-up',
+            'chevrons-left', 'circle', 'clipboard', 'chrome', 'clock', 'cloud-lightning', 'cloud-drizzle', 'cloud-rain',
+            'cloud-off', 'codepen', 'cloud-snow', 'compass', 'copy',
+            'corner-down-right', 'corner-down-left', 'corner-left-down', 'corner-left-up', 'corner-up-left',
+            'corner-up-right', 'corner-right-down', 'corner-right-up', 'cpu', 'credit-card',
+            'crosshair', 'disc', 'delete', 'download-cloud', 'download', 'droplet', 'edit-2', 'edit', 'external-link',
+            'eye', 'feather', 'facebook', 'file-minus',
+            'eye-off', 'fast-forward', 'file-text', 'film', 'file', 'file-plus', 'folder', 'filter', 'flag', 'globe',
+            'grid', 'heart', 'home', 'github', 'image',
+            'inbox', 'layers', 'info', 'instagram', 'layout', 'link-2', 'life-buoy', 'link', 'log-in', 'list', 'lock',
+            'log-out', 'loader', 'mail', 'maximize-2',
+            'map', 'map-pin', 'menu', 'message-circle', 'message-square', 'minimize-2', 'mic-off', 'minus-circle',
+            'mic', 'minus-square', 'minus', 'moon', 'monitor',
+            'more-vertical', 'more-horizontal', 'move', 'music', 'navigation-2', 'navigation', 'octagon', 'package',
+            'pause-circle', 'pause', 'percent', 'phone-call',
+            'phone-forwarded', 'phone-missed', 'phone-off', 'phone-incoming', 'phone', 'phone-outgoing', 'pie-chart',
+            'play-circle', 'play', 'plus-square', 'plus-circle', 'plus',
+            'pocket', 'printer', 'power', 'radio', 'repeat', 'refresh-ccw', 'rewind', 'rotate-ccw', 'refresh-cw',
+            'rotate-cw', 'save', 'search', 'server', 'scissors',
+            'share-2', 'share', 'shield', 'settings', 'skip-back', 'shuffle', 'sidebar', 'skip-forward', 'slack',
+            'slash', 'smartphone', 'square', 'speaker', 'star',
+            'stop-circle', 'sun', 'sunrise', 'tablet', 'tag', 'sunset', 'target', 'thermometer', 'thumbs-up',
+            'thumbs-down', 'toggle-left', 'toggle-right', 'trash-2', 'trash',
+            'trending-up', 'trending-down', 'triangle', 'type', 'twitter', 'upload', 'umbrella', 'upload-cloud',
+            'unlock', 'user-check', 'user-minus', 'user-plus', 'user-x',
+            'user', 'users', 'video-off', 'video', 'voicemail', 'volume-x', 'volume-2', 'volume-1', 'volume', 'watch',
+            'wifi', 'x-square', 'wind', 'x', 'x-circle',
+            'zap', 'zoom-in', 'zoom-out', 'command', 'cloud', 'hash', 'headphones', 'underline', 'italic', 'bold',
+            'crop', 'help-circle', 'paperclip', 'shopping-cart',
+            'tv', 'wifi-off', 'minimize', 'maximize', 'gitlab', 'sliders'
+        ];
+        for (var i = 0, l = iconlist.length; i < l; i++) {
+            let iconblock = document.createElement('div');
+            iconblock.setAttribute('class', 'i-block');
+            iconblock.setAttribute('data-clipboard-text', iconlist[i]);
+            iconblock.setAttribute('data-bs-toggle', 'tooltip');
+            iconblock.setAttribute('data-filter', iconlist[i]);
+            iconblock.setAttribute('title', iconlist[i]);
 
-        iclp.on('error', function (e) {
-            var targetElement = e.trigger;
-            let iconbadge = document.createElement('span');
-            iconbadge.setAttribute('class', 'ic-badge badge bg-danger');
-            iconbadge.innerHTML = "Error";
-            targetElement.append(iconbadge);
-            setTimeout(function () {
-                targetElement.children[1].remove();
-            }, 3000);
-        });
-        document.querySelector("#icon-search").addEventListener("keyup", function () {
-            var g = document.querySelector("#icon-search").value.toLowerCase();
-            var tc = document.querySelectorAll(".i-main .i-block");
-            for (var i = 0; i < tc.length; i++) {
-                var c = tc[i];
-                var t = c.getAttribute('data-filter');
-                if (t) {
-                    var s = t.toLowerCase();
-                }
-                if (s) {
-                    var n = s.indexOf(g);
-                    if (n !== -1) {
-                        c.style.display = "inline-flex";
-                    } else {
-                        c.style.display = "none";
+            let iconmain = document.createElement('i');
+            iconmain.setAttribute('class', 'feather icon-'+ iconlist[i]);
+            iconblock.appendChild(iconmain);
+            document.querySelector('#icon-wrapper').append(iconblock);
+        }
+        window.addEventListener('load', (event) => {
+            var iclp = new ClipboardJS('.i-block');
+            iclp.on('success', function (e) {
+                var targetElement = e.trigger;
+                let iconbadge = document.createElement('span');
+                iconbadge.setAttribute('class', 'ic-badge badge bg-success');
+                iconbadge.innerHTML = "copied";
+                targetElement.append(iconbadge);
+                setTimeout(function () {
+                    targetElement.children[1].remove();
+                }, 3000);
+            });
+
+            iclp.on('error', function (e) {
+                var targetElement = e.trigger;
+                let iconbadge = document.createElement('span');
+                iconbadge.setAttribute('class', 'ic-badge badge bg-danger');
+                iconbadge.innerHTML = "Error";
+                targetElement.append(iconbadge);
+                setTimeout(function () {
+                    targetElement.children[1].remove();
+                }, 3000);
+            });
+            document.querySelector("#icon-search").addEventListener("keyup", function () {
+                var g = document.querySelector("#icon-search").value.toLowerCase();
+                var tc = document.querySelectorAll(".i-main .i-block");
+                for (var i = 0; i < tc.length; i++) {
+                    var c = tc[i];
+                    var t = c.getAttribute('data-filter');
+                    if (t) {
+                        var s = t.toLowerCase();
+                    }
+                    if (s) {
+                        var n = s.indexOf(g);
+                        if (n !== -1) {
+                            c.style.display = "inline-flex";
+                        } else {
+                            c.style.display = "none";
+                        }
                     }
                 }
-            }
+            });
         });
-    });
-</script>
+    </script>
 
-<div class="fixed-button active"><a href="https://appseed.us/product/gradient-able-pro/flask/" target="_blank"
-        class="btn btn-md btn-success"><i class="feather icon-shopping-cart me-2"></i> Upgrade To
-        Pro</a> </div>
-</body>
-</html>
+{% endblock javascripts %}
