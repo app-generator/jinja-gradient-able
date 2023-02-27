@@ -1,0 +1,40 @@
+{% extends 'layouts/auth_base.html' %}
+{% load static %}
+{% block content %}
+<!-- [ auth-signup ] start -->
+<div class="auth-wrapper">
+	<div class="auth-content">
+		<div class="card">
+			<div class="row align-items-center text-center">
+				<div class="col-md-12">
+					<div class="card-body">
+						<img src="{% static 'assets/images/logo-dark.png' %}" alt="" class="img-fluid mb-4">
+						<h4 class="mb-3 f-w-400">Sign up</h4>
+						<form  method="post">
+							{% csrf_token %}
+							{% for field in form %}
+							<div class="input-group mb-3">
+								<span class="input-group-text">
+									<i class="feather {% if field.name == 'username' %} icon-user {% else %} {% if field.name == 'email' %} icon-mail {% else %} icon-lock {% endif %} {% endif %}"></i>
+								</span>
+								{{field}}
+							</div>
+							<small class="text-danger">{{ field.errors }}</small>
+							{% endfor %}
+							<div class="form-group text-left mt-2">
+								<div class="checkbox checkbox-primary d-inline">
+									<input type="checkbox" name="checkbox-fill-2" id="checkbox-fill-2">
+									<label for="checkbox-fill-2" class="cr">Send me the <a href="#"> Newsletter</a> weekly.</label>
+								</div>
+							</div>
+							<button class="btn btn-primary btn-block mt-2 mb-4">Sign up</button>
+							<p class="mb-2">Already have an account? <a href="{% url 'auth_signin' %}" class="f-w-400">Signin</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- [ auth-signup ] end -->
+{% endblock content %}
