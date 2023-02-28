@@ -1,12 +1,11 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
 {% block content %}
 <!-- [ Main Content ] start -->
 <!-- profile header start -->
 <div class="user-profile user-card mb-4">
     <div class="card-header border-0 p-0 pb-0">
         <div class="cover-img-block">
-            <img src="{% static 'assets/images/user/cover.jpg' %}" alt="" class="img-fluid">
+            <img src="{{url_for('static', filename= 'assets/images/user/cover.jpg')}}" alt="" class="img-fluid">
             <div class="overlay"></div>
             <div class="change-cover">
                 <div class="dropdown">
@@ -35,7 +34,7 @@
                                 <div class="profile-dp">
                                     <div class="position-relative d-inline-block">
                                         <img class="img-radius img-fluid wid-100"
-                                            src="{% static 'assets/images/user/avatar-5.jpg' %}" alt="User image">
+                                            src="{{url_for('static', filename= 'assets/images/user/avatar-5.jpg')}}" alt="User image">
                                     </div>
                                     <div class="overlay">
                                         <span>change</span>
