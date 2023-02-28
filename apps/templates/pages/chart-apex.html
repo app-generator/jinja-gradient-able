@@ -1,5 +1,4 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
 {% block content %}
 <!-- [ Main Content ] start -->
 <div class="page-header">
@@ -10,7 +9,7 @@
                     <h5 class="m-b-10">Radial Chart</h5>
                 </div>
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="feather icon-home"></i></a></li>
+                    <li class="breadcrumb-item"><a href="#"><i class="feather icon-home"></i></a></li>
                     <li class="breadcrumb-item"><a href="#">Chart</a></li>
                     <li class="breadcrumb-item"><a href="#">Radial Chart</a></li>
                 </ul>
@@ -85,6 +84,6 @@
 <!-- [ Main Content ] end -->
 {% endblock content %}
 {% block extrajs %}
-<script src="{% static 'assets/js/plugins/apexcharts.min.js' %}"></script>
-<script src="{% static 'assets/js/pages/chart-apex.js' %}"></script>
+<script src="{{url_for('static', filename= 'assets/js/plugins/apexcharts.min.js')}}"></script>
+<script src="{{url_for('static', filename= 'assets/js/pages/chart-apex.js')}}"></script>
 {% endblock extrajs %}

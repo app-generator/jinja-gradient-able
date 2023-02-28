@@ -1,5 +1,4 @@
 {% extends 'layouts/base.html' %}
-{% load static %}
 {% block content %}
 <!-- [ Main Content ] start -->
 <div class="row">
@@ -197,23 +196,23 @@
                 <ul class="feed-blog ps-0">
                     <li class="active-feed">
                         <div class="feed-user-img">
-                            <img src="{% static 'assets/images/user/avatar-4.jpg' %}" class="img-radius " alt="User-Profile-Image">
+                            <img src="{{url_for('static', filename= 'assets/images/user/avatar-4.jpg')}}" class="img-radius " alt="User-Profile-Image">
                         </div>
                         <h6><span class="badge bg-danger">File</span> Eddie uploaded new files: <small class="text-muted">2 hours ago</small></h6>
                         <p class="m-b-15 m-t-15">hii <b> @everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                         <div class="row">
                             <div class="col-auto text-center">
-                                <img src="{% static 'assets/images/gallery-grid/img-grd-gal-1.jpg' %}" alt="img" class="img-fluid wid-100">
+                                <img src="{{url_for('static', filename= 'assets/images/gallery-grid/img-grd-gal-1.jpg')}}" alt="img" class="img-fluid wid-100">
                                 <h6 class="m-t-15 m-b-0">Old Scooter</h6>
                                 <p class="text-muted m-b-0"><small>PNG-100KB</small></p>
                             </div>
                             <div class="col-auto text-center">
-                                <img src="{% static 'assets/images/gallery-grid/img-grd-gal-2.jpg' %}" alt="img" class="img-fluid wid-100">
+                                <img src="{{url_for('static', filename= 'assets/images/gallery-grid/img-grd-gal-2.jpg')}}" alt="img" class="img-fluid wid-100">
                                 <h6 class="m-t-15 m-b-0">Wall Art</h6>
                                 <p class="text-muted m-b-0"><small>PNG-150KB</small></p>
                             </div>
                             <div class="col-auto text-center">
-                                <img src="{% static 'assets/images/gallery-grid/img-grd-gal-3.jpg' %}" alt="img" class="img-fluid wid-100">
+                                <img src="{{url_for('static', filename= 'assets/images/gallery-grid/img-grd-gal-3.jpg')}}" alt="img" class="img-fluid wid-100">
                                 <h6 class="m-t-15 m-b-0">Microphone</h6>
                                 <p class="text-muted m-b-0"><small>PNG-150KB</small></p>
                             </div>
@@ -221,13 +220,13 @@
                     </li>
                     <li class="diactive-feed">
                         <div class="feed-user-img">
-                            <img src="{% static 'assets/images/user/avatar-4.jpg' %}" class="img-radius " alt="User-Profile-Image">
+                            <img src="{{url_for('static', filename= 'assets/images/user/avatar-4.jpg')}}" class="img-radius " alt="User-Profile-Image">
                         </div>
                         <h6><span class="badge bg-success">Task</span> Sarah marked the Pending Review: <span class="text-c-green"> Trash Can Icon Design</span><small class="text-muted"> 2 hours ago</small></h6>
                     </li>
                     <li class="diactive-feed">
                         <div class="feed-user-img">
-                            <img src="{% static 'assets/images/user/avatar-4.jpg' %}" class="img-radius " alt="User-Profile-Image">
+                            <img src="{{url_for('static', filename= 'assets/images/user/avatar-4.jpg')}}" class="img-radius " alt="User-Profile-Image">
                         </div>
                         <h6><span class="badge bg-primary">comment</span> abc posted a task: <span class="text-c-green">Design a new Homepage</span> <small class="text-muted">6 hours ago</small></h6>
                         <p class="m-b-15 m-t-15">hii <b> @everone</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -1585,7 +1584,7 @@
 {% endblock content %}
 {% block extrajs %}
 <!-- custom-chart js -->
-<script src="{% static 'assets/js/pages/dashboard-main.js' %}"></script>
+<script src="{{url_for('static', filename= 'assets/js/pages/dashboard-main.js')}}"></script>
 <!-- Apex Chart -->
-<script src="{% static 'assets/js/plugins/apexcharts.min.js' %}"></script>
+<script src="{{url_for('static', filename= 'assets/js/plugins/apexcharts.min.js')}}"></script>
 {% endblock extrajs %}
